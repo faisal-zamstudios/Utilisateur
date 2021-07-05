@@ -64,8 +64,8 @@
     background-color: #F9F9FF;
 }
 
-.tbl-even tr td {
-    padding: 0.516rem !important;
+.tbl-even tr td:last-child {
+    text-align: right !important;
 }
 
 .tbl-even tr:nth-child(even) td:first-child {
@@ -76,6 +76,368 @@
 .tbl-even tr:nth-child(even) td:last-child {
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
+}
+
+.tbl-43 {
+    width: 100% !important;
+}
+
+.tbl-43 thead tr {
+    background-color: white;
+}
+
+.tbl-43 thead tr td:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.tbl-43 thead tr td:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.tbl-43 tr td {
+    padding: 17px;
+}
+
+.checkbox {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 1px solid hsl(0, 0%, 82%);
+    border-radius: 5px;
+    margin: 0;
+    outline: none;
+    transition: 0.5s ease;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.checkbox-lg {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.checkbox:checked {
+    border: 1px solid #44B328;
+    background-color: transparent;
+}
+
+.checkbox:checked:before {
+    position: absolute;
+    left: 1.5px;
+    top: -1.5px;
+    display: block;
+    content: '\2713';
+    text-align: center;
+    color: #44B328;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.checkbox-lg:checked:before {
+    font-size: 20px !important;
+    left: 6px !important;
+    top: -1px !important;
+}
+
+.checkbox-18 {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.checkbox-18:checked:before {
+    top: 0px !important;
+    left: 2px !important;
+    font-size: 12px;
+}
+
+.checkbox-primary {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.checkbox-primary:checked:before {
+    color: #615EFF !important;
+    top: 0px !important;
+    left: 2.5px !important;
+}
+
+.checkbox-primary:checked {
+    border: 1px solid #615EFF !important;
+}
+
+.ddm-1 {
+    min-width: 99px !important;
+    height: 69px;
+}
+
+.ddm-1 img {
+    position: absolute; 
+    top: -7px; 
+    right: 15px;
+}
+
+.ddm-1.show {
+    top: 12px !important;
+    left: -76px !important;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px 20px rgb(235, 235, 235, 0.25);
+}
+
+.ddm-1-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #14142B; 
+    line-height: 26px; 
+    font-size: 10px; 
+    height: 34px;
+    border-bottom: 1px solid rgba(209, 209, 209, 0.19);
+}
+
+.dropdown-item {
+    padding: 0 !important;
+    border-radius: 10px;
+}
+
+.ddm-2 {
+    min-width: 99px !important;
+    height: 69px;
+}
+
+.ddm-2 .poly {
+    position: absolute; 
+    top: -7px; 
+    left: 15px;
+}
+
+.ddm-2.show {
+    top: 35px !important;
+    left: -10px !important;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px 20px rgb(235, 235, 235, 0.25);
+}
+
+.ddm-3 {
+    min-width: 162px !important;
+    height: 215px;
+}
+
+.ddm-3 img {
+    position: absolute; 
+    top: -7px; 
+    right: 15px;
+}
+
+.ddm-3 li div label {
+    margin-left: 5px;
+    margin-top: 7px !important;
+    margin-bottom: 7px !important;
+}
+
+.ddm-3 li div label, .ddm-3 div {
+    font-family: 'Poppins';
+    font-size: 10px;
+}
+
+.ddm-3.show {
+    top: 40px !important;
+    left: -130px !important;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px 20px rgb(235, 235, 235, 0.25);
+}
+
+.ddm-4 {
+    min-width: 162px !important;
+    height: 215px;
+}
+
+.ddm-4 img {
+    position: absolute; 
+    top: -7px; 
+    right: 15px;
+}
+
+.ddm-4 li div label {
+    margin-left: 5px;
+    margin-top: 7px !important;
+    margin-bottom: 7px !important;
+}
+
+.ddm-4 li div label, .ddm-3 div {
+    font-family: 'Poppins';
+    font-size: 10px;
+}
+
+.ddm-4.show {
+    top: 28px !important;
+    left: -69px !important;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px 20px rgb(235, 235, 235, 0.25);
+}
+
+.active-row {
+    background-color: white;
+}
+
+#expand-row {
+    background-color: white;
+}
+
+.active-row td:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px;
+}
+
+.active-row td:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px;
+}
+
+.border-bottom-radius-10 td:first-child {
+    border-bottom-left-radius: 0% !important;
+}
+
+.border-bottom-radius-10 td:last-child {
+    border-bottom-right-radius: 0% !important;
+}
+
+#expand-row td:first-child {
+    border-bottom-left-radius: 10px !important;
+}
+
+#expand-row td:last-child {
+    border-bottom-right-radius: 10px !important;
+}
+
+.tbl-signer {
+    border: 1px solid #D1D1D1; 
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tbl-signer tr td {
+    padding: 0;
+    height: 62px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url('./img/44/Calendar.png') no-repeat;
+    width: 12px;
+    height: 13px;
+    margin: 0;
+    justify-content: right;
+}
+
+#slct {
+    color: #200E32; 
+    height: 56px; 
+    border-radius: 10px; 
+    border: 1.5px solid #D1D1D1; 
+    box-sizing: border-box;
+}
+
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    width: 100%;
+    box-shadow: none;
+    color: #200E32; 
+    height: 56px;
+    padding-left: 1.25em;
+    border-radius: 10px; 
+    border: 1.5px solid #D1D1D1; 
+    box-sizing: border-box;
+}
+
+.qr-sidebar div:hover {
+    background: #F7F7FF;
+    color: #615EFF !important;
+}
+
+.qr-sidebar div:hover div img.blue-img {
+    display: block !important;
+}
+
+.qr-sidebar div:hover div img.black-img {
+    display: none !important;
+}
+
+.qr-sidebar div.active {
+    background: #F7F7FF;
+}
+
+.qr-sidebar div.active div {
+    color: #615EFF !important;
+}
+
+.qr-sidebar div.active div img.blue-img {
+    display: block !important;
+}
+
+.qr-sidebar div.active div img.black-img {
+    display: none !important;
+}
+
+.qr-sidebar div {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.qr-sidebar div div {
+    color: #200E32;
+}
+
+.tbl-same tbody tr td {
+    width: 25%;
+}
+
+.col-div {
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.col-div-6 {
+    padding-top: 15px !important; 
+    width: 47.4%; 
+    flex: 0 0 47.4%; 
+    max-width: 47.4%;
+}
+
+.date-range {
+    width: 229px; 
+    height: 54px; 
+    border-radius: 10px; 
+    color: #200E32;
+    background: white;
+}
+
+.ptw-btn-44 {
+    width: 224px; 
+    height: 54px; 
+    background: #615EFF; 
+    border-radius: 9px;
 }
 
 .tc-grey {
@@ -140,15 +502,21 @@
     line-height: 20px;
 }
 
-@media screen and (max-width: 1245px) {
-    .adjust-table {
-        width: 100% !important;
+@media screen and (max-width: 1505px) {
+    .ddm-1.show {
+        top: 12px !important;
+        left: -22px !important;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 0px 20px 20px rgb(235, 235, 235, 0.25);
+    }
+    
+    .scroll-adj {
+        overflow-x: scroll;
     }
 }
 
-
 @media screen and (max-width: 1450px) {
-
     .fs-10 {
         font-size: 9px !important;
         line-height: 11px !important;
@@ -195,7 +563,7 @@
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
 
     .fs-10 {
         font-size: 8px !important;
@@ -244,9 +612,39 @@
 
 }
 
+@media screen and (max-width: 1245px) {
+    .adjust-table {
+        width: 100% !important;
+    }
+}
 
 @media screen and (max-width: 890px) {
 
+    .ptw-btn-44 {
+        width: 160px;
+    }
+
+    .date-range {
+        width: 165px;
+    }
+    
+    .qr-sidebar div div img {
+        width: 15.02px !important;
+        height: 15px !important;
+    }
+
+    .col-div {
+        width: 33% !important;
+        flex: 0 0 33% !important;
+        max-width: 33% !important;
+    }
+
+    .col-div-6 {
+        width: 100%; 
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+    
     .fs-10 {
         font-size: 6px !important;
         line-height: 8px !important;
@@ -293,8 +691,3 @@
     }
 
 }
-
-
-
-
-
