@@ -128,6 +128,38 @@
     padding: 17px;
 }
 
+.Remarque-Signature-table {
+    min-width: 650px;
+}
+
+.Remarque-Signature-table tr td {
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.Remarque-Signature-table tbody tr td {
+    background-color: white;
+}
+
+.Remarque-Signature-table tbody tr td:first-child {
+    padding-left: 37px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.Remarque-Signature-table tbody tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.select-person-table tbody tr td {
+    vertical-align: middle;
+}
+
+.select-person-table tbody tr:hover td {
+    background: rgba(97, 94, 255, 0.06);
+}
+
 .selected-row {
     background: #ECF7EA !important;
 }
@@ -221,7 +253,7 @@
 .checkbox-primary:checked:before {
     color: #615EFF !important;
     top: 0.5px !important;
-    left: 3px !important;
+    left: 3.5px !important;
 }
 
 .checkbox-primary:checked {
@@ -722,6 +754,15 @@ select {
 
 @media screen and (max-width: 890px) {
 
+    .qr-sidebar div div.fs-12 {
+        font-size: 8px !important;
+        line-height: 10px !important;
+    }
+
+    .modal-dialog {
+        max-width: 50% !important;
+    }
+
     .mr-28 {
         margin-right: 10px;
     }
@@ -752,18 +793,18 @@ select {
     }
     
     .fs-10 {
-        font-size: 6px !important;
-        line-height: 8px !important;
+        font-size: 8px !important;
+        line-height: 10px !important;
     }
     
     .fs-11 {
-        font-size: 7px !important;
-        line-height: 9px !important;
+        font-size: 8px !important;
+        line-height: 10px !important;
     }
     
     .fs-12 {
-        font-size: 8px !important;
-        line-height: 10px !important;
+        font-size: 9px !important;
+        line-height: 11px !important;
     }    
 
     .fs-13 {
