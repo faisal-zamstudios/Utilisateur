@@ -566,6 +566,10 @@ select {
     border-bottom-right-radius: 15px !important;
 }
 
+input[type="date"]::placeholder {
+    color: rgba(196, 196, 196, 0.5);
+}
+
 .tc-grey {
     color: rgba(92, 87, 97, 0.5);
 }
