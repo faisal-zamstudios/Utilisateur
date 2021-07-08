@@ -628,6 +628,26 @@ select {
     line-height: 20px;
 }
 
+.fs-19 {
+    font-size: 19px;
+    line-height: 21px;
+}
+
+.fs-20 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.fs-22 {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.fs-27 {
+    font-size: 27px;
+    line-height: 29px;
+}
+
 @media screen and (max-width: 1505px) {
     .ddm-1.show {
         top: 12px !important;
@@ -691,6 +711,27 @@ select {
         font-size: 17px;
         line-height: 19px;
     }
+    
+    .fs-19 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .fs-20 {
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    .fs-22 {
+        font-size: 21px;
+        line-height: 23px;
+    }
+    
+    .fs-27 {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -742,6 +783,26 @@ select {
     .fs-18 {
         font-size: 16px !important;
         line-height: 18px !important;
+    }
+
+    .fs-19 {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .fs-20 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .fs-22 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    .fs-27 {
+        font-size: 24px;
+        line-height: 26px;
     }
 
 }
@@ -835,6 +896,26 @@ select {
     .fs-18 {
         font-size: 14px !important;
         line-height: 16px !important;
+    }
+
+    .fs-19 {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .fs-20 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .fs-22 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .fs-27 {
+        font-size: 19px;
+        line-height: 21px;
     }
 
 }
