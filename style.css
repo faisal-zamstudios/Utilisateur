@@ -628,12 +628,33 @@ input[type="date"]::placeholder {
     height: 363px;
 }
 
+.hover-border-black:hover {
+    border: 2px solid rgba(97, 94, 255, 0.54) !important;
+}
+
+.hover-border-black:hover div {
+    color: #200E32 !important;
+}
+
+.hover-border-black:hover input {
+    display: block !important;
+}
+
+.hover-border-black:hover div img.grey-img {
+    display: none !important;
+}
+
+.hover-border-black:hover div img.blue-img {
+    display: block !important;
+}
+
 .hover-border-blue:hover {
     border: 2px solid rgba(97, 94, 255, 0.54) !important;
 }
 
 .hover-border-blue:hover div {
     color: rgba(97, 94, 255, 1) !important;
+    opacity: 1;
 }
 
 .hover-border-blue:hover input {
@@ -731,6 +752,11 @@ input[type="date"]::placeholder {
 }
 
 @media screen and (max-width: 1505px) {
+
+    .adj-img-95 {
+        height: auto !important;
+    }
+
     .ddm-1.show {
         top: 12px !important;
         left: -22px !important;
