@@ -391,7 +391,7 @@
 
 .ddm-4.show {
     top: 28px !important;
-    left: -49px !important;
+    left: 0px !important;
     border-radius: 10px;
     border: none;
     box-shadow: 0px 0px 20px 20px rgb(235, 235, 235, 0.25);
@@ -624,6 +624,30 @@ input[type="date"]::placeholder {
 	right:0;
 }
 
+.set-height-363 {
+    height: 363px;
+}
+
+.hover-border-blue:hover {
+    border: 2px solid rgba(97, 94, 255, 0.54) !important;
+}
+
+.hover-border-blue:hover div {
+    color: rgba(97, 94, 255, 1) !important;
+}
+
+.hover-border-blue:hover input {
+    display: block !important;
+}
+
+.hover-border-blue:hover div img.grey-img {
+    display: none !important;
+}
+
+.hover-border-blue:hover div img.blue-img {
+    display: block !important;
+}
+
 .tc-grey {
     color: rgba(92, 87, 97, 0.5);
 }
@@ -790,6 +814,10 @@ input[type="date"]::placeholder {
 
 @media screen and (max-width: 1280px) {
 
+    .set-height-363 {
+        height: auto !important;
+    }
+    
     .mr-28 {
         margin-right: 16px;
     }

@@ -68,8 +68,8 @@
         <div class="w-100" style="padding-left: 2.778%; padding-right: 2.778%; padding-top: 24px; padding-bottom: 24px;">
             <div class="col-sm-12 d-flex p-0">
                 <div class="col-sm-3 p-0">
-                    <div class="w-100 bg-white" style="min-height: 754px; min-width: 190px; padding-top: 30px; border-radius: 10px; position: relative; box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.03);">
-                        <div class="container-fluid m-0 p-0 px-5 text-center" style="margin-top: 20px !important; margin-bottom: 50px !important;" id="qr-code">
+                    <div class="w-100 bg-white" style="min-height: 754px; padding-top: 30px; border-radius: 10px; position: relative; box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.03);">
+                        <div class="container-fluid p-0 px-5 text-center" style="margin-top: 20px !important; margin-bottom: 50px !important;" id="qr-code">
                             <img src="./img/48/Vector (2).png" class="img-fluid" />
                         </div>
                         <nav class="navbar w-100 p-0 qr-sidebar" style="overflow-x: hidden;">
@@ -606,11 +606,10 @@
                                 04. Equipement de protection
                             </div>
                             <div class="row m-0">
-
                                 <div class="col-lg-2 col-md-4 col-div p-0" style="margin-bottom: 32px !important; margin-top: 2px !important; height: auto;">
                                     <div class="text-center bg-white" style="width: 90%; border-radius: 10px; padding: 14px; height: 100%;">
                                         <input class="checkbox checkbox-18 float-left" type="checkbox" value="">
-                                        <img class="float-right" src="./img/48/Info Circle.png" />
+                                        <img class="float-right" src="./img/48/Info Circle.png" data-toggle="modal" data-target="#myModal3" />
                                         <br />
                                         <div style="height: 90%; width: 100%;">
                                             <img src="./img/48/image1 1.png" class="img-fluid" style="margin-top: 5%;" width="60%">
@@ -900,10 +899,10 @@
 
                     <div class="w-100" id="Remarque-Signature">
                         <div style="max-height: 686px; overflow-y: auto;" id="style-2">
-                            <div class="row m-0 bg-white fs-16" style="margin-bottom: 21px !important; padding-left: 27px; padding-top: 16px; padding-bottom: 16px; color: #200E32; border-radius: 10px;">
+                            <div class="row m-0 bg-white fs-16" style="margin-bottom: 28px !important; padding-left: 27px; padding-top: 16px; padding-bottom: 16px; color: #200E32; border-radius: 10px;">
                                 06. Remarques & Signatures
                             </div>
-                            <textarea class="row m-0 bg-white fs-15 form-control border-0 fw-400" style="margin-top: 28px; resize: vertical !important; border-radius: 10px; height: 178px; line-height: 24.13px !important; padding-right: 7.187%; padding-left: 1.643%; padding-top: 15px; padding-bottom: 15px; overflow-y: auto;" id="style-2">01. Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla.
+                            <textarea class="w-100 bg-white fs-15 border-0 fw-400" style="resize: vertical !important; outline: none !important; border-radius: 10px; height: 178px; line-height: 24.13px !important; padding-right: 7.187%; padding-left: 1.643%; padding-top: 15px; padding-bottom: 15px; overflow-y: auto;" id="style-2">01. Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla.
 02. Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla.</textarea>
                             <div class="w-100" style="margin-top: 21px; overflow-x: auto;" id="style-2">
                                 <table class="table Remarque-Signature-table">
@@ -1012,8 +1011,7 @@
                         </div>
                     </div>
 
-
-
+                    
                 </div>
             </div>
         </div>
@@ -1115,16 +1113,17 @@
                             Please select your signature or add new one
                         </div>
                         <div class="w-100 d-flex" style="margin-top: 50px;">
-                            <div style="width: 196px; height: 127px; border: 2px solid rgba(97, 94, 255, 0.54); box-sizing: border-box; border-radius: 11px; display: grid; padding: 12px; margin-right: 4.943%;">
-                                <input type="checkbox" class="checkbox checkbox-primary" checked />
-                                <div style="font-size: 19px; line-height: 60px; font-family: Amalfi Coast; color: #200E32; min-width: min-content;" class="text-center w-100">
+                            <div class="hover-border-blue" style="width: 196px; height: 127px; position: relative; border: 2px solid rgba(196, 196, 196, 0.5); box-sizing: border-box; border-radius: 11px; display: grid; padding: 12px; margin-right: 4.943%;">
+                                <input type="checkbox" class="checkbox checkbox-primary position-absolute" style="display: none; left: 12px; top: 12px;" checked />
+                                <div style="font-size: 19px; line-height: 60px; font-family: Amalfi Coast; color: #200E32 !important; min-width: min-content;" class="text-center w-100 my-auto">
                                     Christian
                                 </div>
                             </div>
-                            <div style="width: 196px; height: 127px; border: 2px solid rgba(196, 196, 196, 0.5); box-sizing: border-box; border-radius: 11px; display: flex; padding: 12px; margin-right: 4.943%;">
-                                <div style="color: #C4C4C4; opacity: 0.5;" class="text-center my-auto fs-13 w-100">
-                                    <img src="./img/48/Upload.png" class="img-fluid" style="margin-bottom: 14px;" />
-                                    <br/>
+                            <div class="hover-border-blue" style="width: 196px; height: 127px; position: relative; border: 2px solid rgba(196, 196, 196, 0.5); box-sizing: border-box; border-radius: 11px; display: grid; padding: 12px; margin-right: 4.943%;">
+                                <input type="checkbox" class="checkbox checkbox-primary position-absolute" style="display: none; left: 12px; top: 12px;" checked />
+                                <div style="color: #C4C4C4; opacity: 0.5; display: grid; justify-content: center;" class="text-center my-auto fs-13 w-100">
+                                    <img src="./img/48/Upload.png" class="img-fluid grey-img" style="margin-bottom: 14px;" />
+                                    <img src="./img/48/Upload (1).png" class="img-fluid blue-img" style="margin-bottom: 14px; display: none;" />
                                     Upload
                                 </div>
                             </div>
@@ -1134,113 +1133,171 @@
                         <div class="modal-footer border-0 bg-white p-0" style="margin-top: 50px;">
                             <button type="button" class="btn btn-primary" style="background: #615EFF; border-radius: 10px; width: 141px; height: 42px;" data-dismiss="modal">Signer</button>
                         </div>
-                        
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal3">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 606px;">
+               <div class="modal-content br-10" style="border-radius: 14px;">
+                   <!-- Modal body -->
+                   <div class="modal-body" style="padding-left: 8.746% !important; padding-right: 8.746% !important; padding-top: 56px; padding-bottom: 29px;">
+                        <div class="navbar p-0" style="padding-bottom: 40px !important;">
+                            <img class="img img-fluid" src="./img/48/850 1.png" style="border-radius: 7px;" />
+                        </div>
+                        <div class="w-100 text-center" style="margin-bottom: 35px;">
+                            <div class="fs-18 fw-400 w-100" style="margin-bottom: 16px;">
+                                Harnais de sécurité
+                            </div>
+                            <div class="fs-13 fw-400 w-100" style="line-height: 160.9% !important;">
+                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise
+                                en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie 
+                                depuis les années 1500, quand un imprimeur anonyme assembla ensemble 
+                                des morceaux.
+                            </div>
+                        </div>
+                        <div class="navbar p-0">
+                            <button class="bg-transparent mx-auto" style="width: 159px; height: 55px; border: 2px solid #615EFF; box-sizing: border-box; border-radius: 20px; color: #615EFF; font-size: 17px; outline: none;"  data-dismiss="modal">Fermer</button>
+                        </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal4">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 661px;">
+               <div class="modal-content br-10" style="height: 731px; border-radius: 14px;">
+                   <!-- Modal body -->
+                   <div class="modal-body" style="padding-left: 9.834% !important; padding-right: 9.834% !important; padding-top: 41px; padding-bottom: 40px;">
+                        <div class="w-100" style="padding-bottom: 31px !important;">
+                            <table class="w-100">
+                                <tbody>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="navbar p-0">
+                            <button class="bg-transparent mx-auto" style="width: 159px; height: 55px; border: 2px solid #615EFF; box-sizing: border-box; border-radius: 20px; color: #615EFF; font-size: 17px; outline: none;"  data-dismiss="modal">Fermer</button>
+                        </div>
                    </div>
                </div>
            </div>
        </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $('.tous-les-documents-checkbox').click(function(){
-                if($(this).prop("checked") == true){
-                     $(this).parents("tr").children("td").addClass("selected-row");
-                }
-                else if($(this).prop("checked") == false){
-                     $(this).parents("tr").children("td").removeClass("selected-row");
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $('.qr-sidebar div').click(function(){
-                $('.qr-sidebar div').removeClass('active');
-                $(this).addClass('active');
-            });
 
-            $("#Informations-générales").show();
-            $("#Identification-des-dangers").hide();
-            $("#Mesure-de-Protection").hide();
-            $("#Levage-de-charges").hide();
-            $("#Equipement-de-protection").hide();
-            $("#Mesure-de-Protection-sublinks").hide();
-            $("#Autre-document-obligatoire").hide();
-            $("#Remarque-Signature").hide();
-            
-            $("#Informations-générales-link").click(function(){
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.tous-les-documents-checkbox').click(function(){
+                    if($(this).prop("checked") == true){
+                        $(this).parents("tr").children("td").addClass("selected-row");
+                    }
+                    else if($(this).prop("checked") == false){
+                        $(this).parents("tr").children("td").removeClass("selected-row");
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('.qr-sidebar div').click(function(){
+                    $('.qr-sidebar div').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                $("#Informations-générales").show();
                 $("#Identification-des-dangers").hide();
                 $("#Mesure-de-Protection").hide();
+                $("#Levage-de-charges").hide();
                 $("#Equipement-de-protection").hide();
                 $("#Mesure-de-Protection-sublinks").hide();
                 $("#Autre-document-obligatoire").hide();
                 $("#Remarque-Signature").hide();
-                $("#qr-code").show();
-                $("#Informations-générales").show(200);
+                
+                $("#Informations-générales-link").click(function(){
+                    $("#Identification-des-dangers").hide();
+                    $("#Mesure-de-Protection").hide();
+                    $("#Equipement-de-protection").hide();
+                    $("#Mesure-de-Protection-sublinks").hide();
+                    $("#Autre-document-obligatoire").hide();
+                    $("#Remarque-Signature").hide();
+                    $("#qr-code").show();
+                    $("#Informations-générales").show(200);
+                });
+                $("#Identification-des-dangers-link").click(function(){
+                    $("#Informations-générales").hide();
+                    $("#Mesure-de-Protection").hide();
+                    $("#Mesure-de-Protection-sublinks").hide();
+                    $("#Equipement-de-protection").hide();
+                    $("#Autre-document-obligatoire").hide();
+                    $("#Remarque-Signature").hide();
+                    $("#qr-code").show();
+                    $("#Identification-des-dangers").show(200);
+                });
+                $("#Mesure-de-Protection-link").click(function(){
+                    $("#Informations-générales").hide();
+                    $("#Identification-des-dangers").hide();
+                    $("#qr-code").hide();
+                    $("#Equipement-de-protection").hide();
+                    $("#Autre-document-obligatoire").hide();
+                    $("#Remarque-Signature").hide();
+                    $("#Mesure-de-Protection").show(200);
+                    $("#Mesure-de-Protection-sublinks").show(200);
+                });
+                $("#Consignation-des-énergies-link").click(function(){
+                    $("#Consignation-des-énergies").show(200);
+                });
+                $("#Equipement-de-protection-link").click(function(){
+                    $("#Informations-générales").hide();
+                    $("#Identification-des-dangers").hide();
+                    $("#qr-code").show(300);
+                    $("#Mesure-de-Protection").hide();
+                    $("#Mesure-de-Protection-sublinks").hide(200);
+                    $("#Autre-document-obligatoire").hide();
+                    $("#Remarque-Signature").hide();
+                    $("#Equipement-de-protection").show(200);
+                });
+                $("#Autre-document-obligatoire-link").click(function(){
+                    $("#Informations-générales").hide();
+                    $("#Identification-des-dangers").hide();
+                    $("#qr-code").show();
+                    $("#Mesure-de-Protection").hide();
+                    $("#Equipement-de-protection").hide();
+                    $("#Mesure-de-Protection-sublinks").hide(200);
+                    $("#Remarque-Signature").hide();
+                    $("#Autre-document-obligatoire").show(200);
+                });
+                $("#Remarque-Signature-link").click(function(){
+                    $("#Informations-générales").hide();
+                    $("#Identification-des-dangers").hide();
+                    $("#qr-code").show();
+                    $("#Mesure-de-Protection").hide();
+                    $("#Equipement-de-protection").hide();
+                    $("#Mesure-de-Protection-sublinks").hide(200);
+                    $("#Autre-document-obligatoire").hide();
+                    $("#Remarque-Signature").show(200);
+                });
+                
             });
-            $("#Identification-des-dangers-link").click(function(){
-                $("#Informations-générales").hide();
-                $("#Mesure-de-Protection").hide();
-                $("#Mesure-de-Protection-sublinks").hide();
-                $("#Equipement-de-protection").hide();
-                $("#Autre-document-obligatoire").hide();
-                $("#Remarque-Signature").hide();
-                $("#qr-code").show();
-                $("#Identification-des-dangers").show(200);
-            });
-            $("#Mesure-de-Protection-link").click(function(){
-                $("#Informations-générales").hide();
-                $("#Identification-des-dangers").hide();
-                $("#qr-code").hide();
-                $("#Equipement-de-protection").hide();
-                $("#Autre-document-obligatoire").hide();
-                $("#Remarque-Signature").hide();
-                $("#Mesure-de-Protection").show(200);
-                $("#Mesure-de-Protection-sublinks").show(200);
-            });
-            $("#Consignation-des-énergies-link").click(function(){
-                $("#Consignation-des-énergies").show(200);
-            });
-            $("#Equipement-de-protection-link").click(function(){
-                $("#Informations-générales").hide();
-                $("#Identification-des-dangers").hide();
-                $("#qr-code").show(300);
-                $("#Mesure-de-Protection").hide();
-                $("#Mesure-de-Protection-sublinks").hide(200);
-                $("#Autre-document-obligatoire").hide();
-                $("#Remarque-Signature").hide();
-                $("#Equipement-de-protection").show(200);
-            });
-            $("#Autre-document-obligatoire-link").click(function(){
-                $("#Informations-générales").hide();
-                $("#Identification-des-dangers").hide();
-                $("#qr-code").show();
-                $("#Mesure-de-Protection").hide();
-                $("#Equipement-de-protection").hide();
-                $("#Mesure-de-Protection-sublinks").hide(200);
-                $("#Remarque-Signature").hide();
-                $("#Autre-document-obligatoire").show(200);
-            });
-            $("#Remarque-Signature-link").click(function(){
-                $("#Informations-générales").hide();
-                $("#Identification-des-dangers").hide();
-                $("#qr-code").show();
-                $("#Mesure-de-Protection").hide();
-                $("#Equipement-de-protection").hide();
-                $("#Mesure-de-Protection-sublinks").hide(200);
-                $("#Autre-document-obligatoire").hide();
-                $("#Remarque-Signature").show(200);
-            });
-            
-        });
-    </script>
+        </script>
 
-  </body>
+    </body>
 </html>
