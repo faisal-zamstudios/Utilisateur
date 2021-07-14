@@ -399,7 +399,7 @@
                                     <input class="checkbox checkbox-primary" type="checkbox">
                                 </div>
                             </div>
-                            <div class="row m-0">
+                            <div class="row m-0" style="display: none;">
                                 <div class="col-lg-2 col-md-4 col-div p-0" style="margin-bottom: 32px !important; margin-top: 2px !important; height: auto;">
                                     <div class="text-center bg-white" style="width: 90%; border-radius: 10px; padding: 14px; height: 100%;">
                                         <input class="checkbox checkbox-18 float-left" type="checkbox" value="">
@@ -481,7 +481,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row m-0" style="display: none;">
+                            <div class="row m-0">
                                 <div style="width: 70%;">
                                     <label class="fs-17" style="color: #200E32;">Autre(s) cas non-prévus</label>
                                     <div class="position-relative">
@@ -681,8 +681,20 @@
                                         <input class="drag-file-input" type="file" multiple>
                                     </div>
                                 </div>
-                                <div class="container-fluid p-0 fs-15" style="color: #200E32; margin-top: 32px; margin-bottom: 16px;">
-                                    Tous les documents
+                                <div class="navbar p-0 w-100" style="margin-top: 32px; margin-bottom: 16px;">
+                                    <div class="fs-15" style="color: #200E32;">
+                                        Tous les documents
+                                    </div>
+                                    <div style="justify-content: flex-end; display: none;" id="Tous-les-documents-btn">
+                                        <div class="d-flex fs-14" style="justify-content: center; align-items: center; margin-right: 15px; padding: 9px; border: 1.25px solid #615EFF; box-sizing: border-box; border-radius: 8px; width: 112px; height: 34px; color: #615EFF;">
+                                            <img src="./img/48/Downlaod.png" class="img-fluid" style="margin-right: 7.5px;" />
+                                            Download
+                                        </div>
+                                        <div class="d-flex fs-14" style="justify-content: center; align-items: center; padding: 9px; border: 1.25px solid #FF5656; box-sizing: border-box; border-radius: 8px; width: 112px; height: 34px; color: #FF5656;">
+                                            <img src="./img/48/Delete.png" class="img-fluid" style="margin-right: 7.5px;" />
+                                            Supprimer
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row m-0 w-100" style="overflow-x: auto; padding-bottom: 5px;" id="style-2">
                                     <div class="w-100" style="border-radius: 15px; border: 1.5px solid rgba(209, 209, 209, 0.5); min-width: 610px;">
@@ -1113,9 +1125,9 @@
                             Please select your signature or add new one
                         </div>
                         <div class="w-100 d-flex" style="margin-top: 50px;">
-                            <div class="hover-border-blue" style="width: 196px; height: 127px; position: relative; border: 2px solid rgba(196, 196, 196, 0.5); box-sizing: border-box; border-radius: 11px; display: grid; padding: 12px; margin-right: 4.943%;">
+                            <div class="hover-border-black" style="width: 196px; height: 127px; position: relative; border: 2px solid rgba(196, 196, 196, 0.5); box-sizing: border-box; border-radius: 11px; display: grid; padding: 12px; margin-right: 4.943%;">
                                 <input type="checkbox" class="checkbox checkbox-primary position-absolute" style="display: none; left: 12px; top: 12px;" checked />
-                                <div style="font-size: 19px; line-height: 60px; font-family: Amalfi Coast; color: #200E32 !important; min-width: min-content;" class="text-center w-100 my-auto">
+                                <div style="font-size: 19px; line-height: 60px; font-family: Amalfi Coast; color: #C4C4C4; opacity: 0.5; min-width: min-content;" class="text-center w-100 my-auto">
                                     Christian
                                 </div>
                             </div>
@@ -1206,9 +1218,11 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script>
             $(document).ready(function(){
+                var $Tous_btn = $("#Tous-les-documents-btn");
                 $('.tous-les-documents-checkbox').click(function(){
                     if($(this).prop("checked") == true){
                         $(this).parents("tr").children("td").addClass("selected-row");
+                        $Tous_btn.css('display','flex');
                     }
                     else if($(this).prop("checked") == false){
                         $(this).parents("tr").children("td").removeClass("selected-row");
